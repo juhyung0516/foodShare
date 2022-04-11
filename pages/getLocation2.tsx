@@ -7,6 +7,7 @@ function getLocation2() {
       console.log(position.coords.longitude);
     });
   });
+
   return <div>getLocation2</div>;
 }
 
