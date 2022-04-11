@@ -102,6 +102,9 @@ function kakaomap3({ latitude, longitude }: MapProps) {
       <div>
         <Box id="map" sx={{ width: 600, height: 600 }}></Box>
       </div>
+      {/* <p>
+        <button id="clickLatlng">교통정보 보기</button>
+      </p> */}
     </>
   );
 }
