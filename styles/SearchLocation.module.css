@@ -1,34 +1,19 @@
-.wrapper {
-  background-color: #e1e1e1;
-  height: 100%;
-  margin-top: 0;
-  margin-left: 0;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  z-index: 1;
+.searchShow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.wrapper .search {
-  width: 100vw;
-  height: 20vh;
-  position: relative;
-}
-
-.wrapper .search .BannerImage {
+.searchShow .BannerImage {
   width: 100%;
   height: 100%;
   position: relative !important;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   z-index: 2;
 }
 
-.wrapper .search .ztest {
+.searchShow .ztest {
   z-index: 3;
   position: absolute;
   left: 50%;
@@ -43,4 +28,11 @@
   white-space: nowrap;
   -webkit-font-smoothing: antialiased;
 }
-/*# sourceMappingURL=Home.module.css.map */
+
+.searchShow .GPS {
+  color: #fa0050;
+  display: block;
+  background-color: white;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=SearchLocation.module.css.map */

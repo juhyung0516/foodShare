@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.footer {
+  border-top: 1px solid #c4c4c4;
+  padding-top: 15px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  background-color: #fbfbfb;
+  width: 100%;
+  height: 110px;
+  /* 내용물에 따라 알맞는 값 설정 */
+  bottom: 0px;
+  position: fixed;
+  font-size: 13px;
+}
+/*# sourceMappingURL=Footer.module.css.map */

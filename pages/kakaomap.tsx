@@ -1,6 +1,17 @@
 import Box from "@mui/material/Box";
 import React, { useEffect, MouseEvent } from "react";
 
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function (pos) {
+      //You have your locaton here
+      console.log(pos.coords.latitude, pos.coords.longitude);
+    });
+  } else {
+    console.log("Geolocation is not supported by this browser.");
+  }
+}
+
 // 카카오 오류가 안 뜨게 인터페이스 선언
 declare global {
   interface Window {
