@@ -1,7 +1,6 @@
 .searchShow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  text-align: center;
 }
 
 .searchShow .BannerImage {
@@ -10,10 +9,12 @@
   position: relative !important;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 2;
+  z-index: 1;
 }
 
 .searchShow .ztest {
+  display: inline-block;
+  width: 100%;
   z-index: 3;
   position: absolute;
   left: 50%;
@@ -27,12 +28,31 @@
   font-weight: 400;
   white-space: nowrap;
   -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.searchShow .GPS {
+.searchShow .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.searchShow .wrapper .GPS {
   color: #fa0050;
-  display: block;
   background-color: white;
+  border-radius: 4px;
+  position: relative;
+  z-index: 10;
+  top: 40%;
+}
+
+.searchShow .wrapper .TextField {
+  margin: 0;
+  background-color: White;
   border-radius: 4px;
 }
 /*# sourceMappingURL=SearchLocation.module.css.map */

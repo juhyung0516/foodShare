@@ -1,0 +1,66 @@
+.wrapper {
+  width: 96px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.wrapper .inner {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 96px;
+  position: fixed;
+  height: 100vh;
+  background-color: black;
+}
+
+.wrapper .inner ul {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+}
+
+.wrapper .inner ul li {
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.wrapper .inner ul li svg {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+
+.wrapper .inner ul li:hover {
+  background-color: #536dfe;
+}
+
+.wrapper .inner ul li:hover svg {
+  fill: black;
+}
+
+.wrapper .open {
+  width: 150px;
+}
+
+.active {
+  width: 150px;
+}
+/*# sourceMappingURL=Sidebar.module.css.map */
