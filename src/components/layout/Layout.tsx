@@ -1,6 +1,6 @@
 import Header2 from "./Header2";
 import React, { useState } from "react";
-import styles from "../styles/Layout.module.scss";
+import styles from "styles/Layout.module.scss";
 import Footer from "./Footer";
 
 type LayoutProps = {
@@ -15,9 +15,7 @@ function Layout({ children }: LayoutProps) {
       <div className={styles.wrapper}>
         <div className={styles.content}>{children}</div>
       </div>
-      <div>
-        <Footer />
-      </div>
+      <div>{/* <Footer /> */}</div>
     </>
   );
 }

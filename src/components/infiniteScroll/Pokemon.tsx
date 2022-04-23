@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useInfiniteQuery, useQuery } from "react-query";
-import { getPoke } from "../pages/api/index";
-import useIntersectionObserver from "../hooks/useIntersectionObserver";
+import { getPoke } from "pages/api/index";
+import useIntersectionObserver from "hooks/useIntersectionObserver";
 
 const Pokemon = () => {
   const { data, hasNextPage, fetchNextPage } = useInfiniteQuery(

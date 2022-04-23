@@ -1,0 +1,5 @@
+{
+  "watch": ["server.ts", "nodemon.json"],
+  "exec": "node server.ts",
+  "ext": "js json jsx"
+}

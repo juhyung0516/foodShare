@@ -1,4 +1,4 @@
-import styles from "../styles/Header2.module.scss";
+import styles from "styles/Header2.module.scss";
 import React, { Dispatch, SetStateAction, useState } from "react";
 import Link from "next/link";
 import IconButton from "@mui/material/IconButton";

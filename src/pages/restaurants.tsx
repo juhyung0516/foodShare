@@ -1,16 +1,15 @@
-import Pokemon from "../component/Pokemon";
-import { getPoke } from "./api/index";
+import { getRestaurant } from "pages/api/test";
 import { QueryClient } from "react-query";
 import { dehydrate } from "react-query/hydration";
 
 const Poke = () => {
-  return <Pokemon />;
+  return null;
 };
 
 export async function getServerSideProps() {
   const queryClient = new QueryClient();
 
-  await queryClient.prefetchInfiniteQuery("poke", () => getPoke(), {
+  await queryClient.prefetchInfiniteQuery("poke", () => getRestaurant(), {
     staleTime: 1000,
   });
 

@@ -1,7 +1,7 @@
 import React from "react";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import Image from "next/image";
-import styles from "../styles/SearchLocation.module.scss";
+import styles from "styles/SearchLocation.module.scss";
 import FormControl from "@mui/material/FormControl";
 import TextField from "@mui/material/TextField";
 

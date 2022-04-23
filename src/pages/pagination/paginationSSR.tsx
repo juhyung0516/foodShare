@@ -1,7 +1,14 @@
-import { useQuery, dehydrate, QueryClient } from "react-query";
+import {
+  useQuery,
+  dehydrate,
+  QueryClient,
+  QueryClientProvider,
+} from "react-query";
 import Pagination from "@material-ui/lab/Pagination";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import { ReactQueryDevtools } from "react-query/devtools";
+import axios from "axios";
 
 export default function paginationSSR(props) {
   const router = useRouter();
@@ -62,6 +69,7 @@ export default function paginationSSR(props) {
         page={page}
         onChange={handlePaginationChange}
       />
+      <ReactQueryDevtools />
     </div>
   );
 }

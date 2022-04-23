@@ -4,8 +4,8 @@ import ReactPaginate from "react-paginate";
 import Router, { withRouter } from "next/router";
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.scss";
-import SearchLocation from "../component/SearchLocation";
-import TestModals from "../component/testModal";
+import SearchLocation from "components/kakaomap/SearchLocation";
+import TestModals from "components/test/testModal";
 const Home: NextPage = () => {
   return (
     <div className={styles.wrapper}>
