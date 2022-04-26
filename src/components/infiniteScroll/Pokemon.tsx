@@ -33,6 +33,7 @@ const Pokemon = () => {
     <>
       <ul>
         {data.pages.map((page) =>
+          // 굳이 map을 2번 돌릴 필요가 없다.
           page.results.map((poke) => (
             <li key={poke.name} style={{ padding: "20px", fontWeight: "bold" }}>
               {poke.name}
